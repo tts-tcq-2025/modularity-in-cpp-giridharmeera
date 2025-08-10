@@ -13,9 +13,7 @@ static void testNumberToPair(int pairNumber,
   assert(colorPair.getMinor() == expectedMinor);
 }
 
-static void testPairToNumber(MajorColor major,
-                             MinorColor minor,
-                             int expectedPairNumber) {
+static void testPairToNumber(MajorColor major, MinorColor minor, int expectedPairNumber) {
   int pairNumber = GetPairNumberFromColor(major, minor);
   std::cout << "Got pair number " << pairNumber << "\n";
   assert(pairNumber == expectedPairNumber);
